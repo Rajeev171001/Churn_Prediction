@@ -7,8 +7,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
  
 # Load trained RandomForestClassifier model
-model = pickle.load(open(r"C:\Users\Rajeev\OneDrive\Desktop\Flaskdemo\myproject\data\model.pkl", "rb"))
- 
+model = pickle.load(open("model.pkl","rb"))
 # Define features
 numerical_features = ['tenure', 'MonthlyCharges', 'TotalCharges']
 categorical_features = ['Contract', 'TechSupport', 'OnlineSecurity', 'InternetService',

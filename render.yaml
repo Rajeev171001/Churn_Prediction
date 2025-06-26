@@ -1,9 +1,10 @@
 services:
   - type: web
-    name: Churn_Prediction-1  # You can change this if you want
+    name: Churn_Prediction-1
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app  # Make sure 'app' is your Python file (e.g., app.py)
-    build:
-      pythonVersion: 3.12.3
+    startCommand: gunicorn app:app
+
+build:
+  pythonVersion: 3.12.3

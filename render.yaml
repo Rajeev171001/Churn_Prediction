@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: Churn_Prediction-1
+    name: Churn_Prediction-2
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt

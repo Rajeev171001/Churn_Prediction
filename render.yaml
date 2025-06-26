@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: Churn_Prediction-1  # <-- Change this to your Render service name
+    name: Churn_Prediction-1  # You can change this if you want
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app  # <-- Or whatever your start command is
+    startCommand: gunicorn app:app  # Make sure 'app' is your Python file (e.g., app.py)
     build:
       pythonVersion: 3.12.3
